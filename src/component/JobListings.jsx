@@ -11,8 +11,8 @@ const JobListings = ({ isHome = false }) => {
   useEffect(() => {
     const fetchJobs = async () => {
       const apiUrl = isHome
-        ? "https://react-job-clone-tutorial.onrender.com/jobs?_limit=3"
-        : "https://react-job-clone-tutorial.onrender.com/jobs";
+        ? "https://react-job-listing-1.onrender.com/jobs?_limit=3"
+        : "https://react-job-listing-1.onrender.com/jobs";
       try {
         const res = await fetch(apiUrl);
         const data = await res.json();
